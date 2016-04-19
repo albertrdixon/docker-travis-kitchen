@@ -4,7 +4,7 @@ VOLUME /sys/fs/cgroup
 ENV container docker
 RUN yum -y update; yum clean all
 RUN yum -y remove fakesystemd \
-    && yum -y install
+    && yum -y install \
         automake \
         bash \
         crontabs \
